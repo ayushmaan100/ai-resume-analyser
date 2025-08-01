@@ -1,8 +1,9 @@
-
-
-
-
-
+import type { Route } from "./+types/home";
+import Navbar from "~/components/Navbar";
+import ResumeCard from "~/components/ResumeCard";
+import {usePuterStore} from "~/lib/puter";
+import {Link, useNavigate} from "react-router";
+import {useEffect, useState} from "react";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -10,7 +11,6 @@ export function meta({}: Route.MetaArgs) {
     { name: "description", content: "Smart feedback for your dream job!" },
   ];
 }
-
 
 export default function Home() {
   const { auth, kv } = usePuterStore();
@@ -48,7 +48,7 @@ export default function Home() {
         {!loadingResumes && resumes?.length === 0 ? (
             <h2>No resumes found. Upload your first resume to get feedback.</h2>
         ): (
-            <h2>Review your submissions and check AI-powered feedback.</h2>
+          <h2>Review your submissions and check AI-powered feedback.</h2>
         )}
       </div>
       {loadingResumes && (
@@ -58,11 +58,11 @@ export default function Home() {
       )}
 
       {!loadingResumes && resumes.length > 0 && (
-          <div className="resumes-section">
-            {resumes.map((resume) => (
-                <ResumeCard key={resume.id} resume={resume} />
-            ))}
-          </div>
+        <div className="resumes-section">
+          {resumes.map((resume) => (
+              <ResumeCard key={resume.id} resume={resume} />
+          ))}
+        </div>
       )}
 
       {!loadingResumes && resumes?.length === 0 && (
