@@ -1,87 +1,87 @@
-# Welcome to React Router!
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=iYOz165wGkQ" target="_blank">
+    <img src="public/readme/hero.webp" alt="AI Resume Analyzer" style="width:100%;max-width:720px;" />
+  </a>
 
-A modern, production-ready template for building full-stack React applications using React Router.
+  <h1>AI Resume Analyzer</h1>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+  <p>
+    Smart, browser-based resume analysis using AI, React, and Puter.js.<br />
+    No backend. Real-time feedback. ATS score.
+  </p>
 
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+  <div>
+    <img alt="React" src="https://img.shields.io/badge/React-4c84f3?style=for-the-badge&logo=react&logoColor=white">
+    <img alt="Tailwind" src="https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+    <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+    <img alt="Puter.js" src="https://img.shields.io/badge/Puter.js-181758?style=for-the-badge&logoColor=white">
+  </div>
+</div>
 
 ---
 
-Built with ❤️ using React Router.
+## ✨ Overview
+
+Build a modern AI-powered resume analyzer using **React**, **Puter.js**, and **Tailwind CSS**. Users can:
+- Authenticate instantly (serverless)
+- Upload resumes to secure cloud
+- Analyze resumes against job descriptions
+- Get **ATS score**, **smart feedback**, and **optimization tips**
+
+Built fully on the browser with zero backend setup.
+
+---
+
+## ⚙️ Tech Stack
+
+- **React + Vite** – Lightning-fast SPA setup
+- **Tailwind CSS** – Responsive, utility-first styling
+- **TypeScript** – Safer code with static typing
+- **Puter.js** – Built-in storage, auth, and AI APIs
+- **Zustand** – Lightweight state management
+
+---
+
+## 🚀 Features
+
+- 🔐 Auth without backend (Puter.js)
+- 📤 Upload & store multiple resumes
+- 🤖 AI analysis with resume-to-job matching
+- 📊 ATS score + improvement tips
+- 💻 100% responsive and cross-platform UI
+- ♻️ Clean, reusable React components
+
+---
+
+## 📦 Quick Start
+
+```bash
+# Clone the repo
+git clone https://github.com/adrianhajdin/ai-resume-analyzer.git
+cd ai-resume-analyzer
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+Open http://localhost:5173 to view the app.
+
+
+ 🧩 Extra Improvements
+	🔄 Auto-save the latest resume state to local storage
+	🌙 Dark mode toggle (optional)
+	🧠 GPT & Claude-powered feedback (via Puter AI)
+	✅ Resume validation using regex + file type check
+
+
+## 📬 Contact Me
+
+💼 LinkedIn: (https://www.linkedin.com/in/ayushmaan-tiwari-61126916b/)
+🌐 Portfolio: (https://portfolio-orpin-three-46.vercel.app/)
+✉️ Email: (ayushmaan.at2004@gmail.com)
+
+📜 License
+
+MIT License © Ayushmaan
